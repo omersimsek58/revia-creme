@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revia Creme</title>
+
+    <style>
+        :root {
+            --main-color: #1f3b2f;
+            --accent-color: #000000;
+            --bg-color: #f7f7f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #ffffffcc;
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 10;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo img {
+            height: 40px;
+        }
+
+        nav a {
+            margin-left: 18px;
+            text-decoration: none;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        nav a:hover {
+            color: var(--main-color);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        #home {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #home h1 {
+            font-size: 2.8rem;
+            letter-spacing: 0.2em;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--main-color);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            letter-spacing: 0.08em;
+        }
+
+        #about h2,
+        #contact h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.1em;
+        }
+
+        #about p {
+            max-width: 760px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-left: 25px;
+            line-height: 1.7;
+        }
+
+        #contact form {
+            max-width: 520px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: var(--main-color);
+            border: none;
+            color: #fff;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+
+        @media(max-width: 720px) {
+            nav { display: none; }
+            #home { text-align: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="revia-logo.png" alt="Revia Creme">
+            <span>REVIA CREME</span>
+        </div>
+        <nav>
+            <a href="#home">Ana Sayfa</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<!-- ANA SAYFA -->
+<section id="home">
+    <div>
+        <h1>REVIA<br><span style="font-size:1.2rem;">CREME</span></h1>
+        <p class="tagline">Koku, hatıralara açılan bir yol.</p>
+        <p>
+            Revia Creme, kokuların insan zihnindeki anı kapılarını açan etkisinden
+            ilham alan bir kişisel bakım markasıdır. Modern, ferah, hafif, migren
+            dostu ve aromaterapi temelli kokularla tasarlanmış kremler üretir.
+        </p>
+        <a href="#about" class="btn-primary">Daha Fazlası</a>
+    </div>
+
+    <div>
+        <img src="revia-logo.png" width="260">
+    </div>
+</section>
+
+<!-- HAKKIMIZDA -->
+<section id="about">
+    <h2>Hakkımızda</h2>
+
+    <p>
+        Revia Creme, Medipol Üniversitesi öğrencileri 
+        <strong>İrem Kasım, Rabia Genç, Gökçe Dilara Şahin</strong> ve
+        <strong>Ömer Faruk Şimşek</strong> tarafından kurulmuş yenilikçi bir 
+        aromaterapi & kişisel bakım markasıdır.
+    </p>
+
+    <p>
+        Markanın doğuş noktası yalnızca güzel kokmak değil; kokunun 
+        <strong>migreni azaltan, zihni sakinleştiren, geçmiş anıları tetikleyen</strong> 
+        güçlü etkisini modern bir krem konseptiyle birleştirmektir.
+    </p>
+
+    <p>
+        Revia ismi “revisit” (yeniden ziyaret etmek) ve “via” (yol) kelimelerinden gelir.
+        Çünkü her kokunun içinde bir yolculuk saklıdır: çocukluk anıları, sevilen bir insan,
+        bir mevsim, bir şehir, bir duygu…
+    </p>
+
+    <p>Vizyonumuz:</p>
+
+    <ul>
+        <li>Doğal ve migren dostu kokular geliştirmek</li>
+        <li>Duyusal (sensory) tasarımla anıları yeniden canlandırmak</li>
+        <li>Modern ve minimal ambalaj anlayışını benimsemek</li>
+        <li>Beden ve zihin için ferahlatıcı günlük bakım ürünleri sunmak</li>
+    </ul>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="contact">
+    <h2>İletişim</h2>
+
+    <p style="max-width:550px; margin-bottom:20px;">
+        Ürünler, iş birlikleri veya soru & öneriler için aşağıdaki formdan bize ulaşabilirsiniz.
+    </p>
+
+    <form action="https://formsubmit.co/omer.gereksize@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Revia Creme - Yeni Mesaj">
+        <input type="hidden" name="_next" value="tesekkurler.html">
+
+        <label>Ad Soyad</label>
+        <input type="text" name="Ad Soyad" required>
+
+        <label>E-posta</label>
+        <input type="email" name="Email" required>
+
+        <label>Konu</label>
+        <input type="text" name="Konu" required>
+
+        <label>Mesajın</label>
+        <textarea name="Mesaj" required></textarea>
+
+        <button type="submit">Mesajı Gönder</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    © <span id="year"></span> Revia Creme · Tüm Hakları Saklıdır.
+</footer>
+
+<script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
